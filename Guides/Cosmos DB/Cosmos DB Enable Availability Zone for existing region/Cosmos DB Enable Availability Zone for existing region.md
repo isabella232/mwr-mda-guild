@@ -5,11 +5,11 @@ Customers who have existing Cosmos DB accounts deployed who want to leverage Ava
 
 To deploy AZ to a new Cosmos DB account, "enable" AZ in the "Global Distribution" section of the new service wizard. 
 
-![](.\images\cosmosdb-az-newAccount.png)
+![](https://github.com/Azure/mwr-mda-guild/blob/main/Guides/Cosmos%20DB/Cosmos%20DB%20Enable%20Availability%20Zone%20for%20existing%20region/images/cosmosdb-az-newAccount.png)
 
 Or, when you are configuring a new region in your Cosmos DB account, you may notice that a checkbox is available to enable AZ:
 
-![](.\images\cosmosdb-az-newRegion.png)
+![](https://github.com/Azure/mwr-mda-guild/blob/main/Guides/Cosmos%20DB/Cosmos%20DB%20Enable%20Availability%20Zone%20for%20existing%20region/images/cosmosdb-az-newRegion.png)
 
 This guide shows you how to enable AZ for an existing Cosmos DB region. It requires manually migrating to a secondary region, deleting, and re-adding the primary region. This process is seemeless to the clients and there is no data-loss as Cosmos DB fails gracefully when performing a manual failover.
 
